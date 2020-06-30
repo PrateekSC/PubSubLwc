@@ -1,0 +1,19 @@
+<template>
+    <lightning-card title="HelloWorld" icon-name="custom:custom14">
+        ColorSubLwc
+
+       <div class="slds-m-around_medium">
+          Colors:
+          <div class="slds-form-element__control slds-input-has-icon slds-input-has-icon slds-input-has-icon_left-right" role="none">
+            <template for:each={selectedColors} for:item="selectedItem">
+                <span key={selectedItem.value}>
+                    <lightning-pill label={selectedItem.label} name={selectedItem.value} data-item={selectedItem.value}
+                        class='pillitem' >
+                    </lightning-pill>
+                </span>
+            </template>                     
+          </div>
+        </div>
+
+      </lightning-card>
+</template>
